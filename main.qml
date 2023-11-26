@@ -172,9 +172,16 @@ ApplicationWindow {
     }
     ///BLOCK TIME/DAY END
     Text {
+        property date currentDate: new Date()
+        id: txtDate
         x: txtTime.x
         y: txtTime.y + txtTime.height + 15
-        text: "Monday, 2 February 2015"
+        text: {
+            var currentDMY = currentDate.toLocaleDateString()
+            var currentDay = currentDate.getDay() // Возвращает номер дня. Начало с ВСК(ОРЕМИКА!!!!!!)
+            const dayNames = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница","Суббота"];
+            return dayNames[currentDay] + ", " + currentDMY
+        }
         font.family: "Arial"
         font.pixelSize: 16
         color: "white"
@@ -185,7 +192,7 @@ ApplicationWindow {
         running: true
         repeat: true
         onTriggered: {
-            weather.responseWeatherAPI();
+//            weather.responseWeatherAPI();
         }
     }
 }

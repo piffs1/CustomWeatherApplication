@@ -7,5 +7,5 @@ GetWeather::GetWeather(QObject *parent) : QObject(parent)
 
 void GetWeather::responseWeatherAPI()
 {
-    qDebug() << "Response sended!";
+//    qDebug() << "Response sended!";
 }
