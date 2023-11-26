@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>easy_cloud.svg</file>
+        <file>cloudy.svg</file>
+        <file>snow.svg</file>
+        <file>sunny.svg</file>
+        <file>sunny_rain.svg</file>
+        <file>sunny_cloudy.svg</file>
+        <file>moscow-russia-kremlin-city-616.jpg</file>
+    </qresource>
+</RCC>
